@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OnboradingView: View {
     // MARK: - PROPERTIES
-    @State var updateViewCount = 3
+    @State var updateOnboardingState = 0
     @State var name:String = ""
     @State var age:Double = 0
     @State var gender:String = "MALE"
@@ -18,7 +18,7 @@ struct OnboradingView: View {
         ZStack {
             Color.orange.ignoresSafeArea()
             ZStack {
-                switch updateViewCount {
+                switch  updateOnboardingState{
                 case 0 :
                     welcomeView
                 case 1:
@@ -57,8 +57,16 @@ extension OnboradingView {
             .background(Color.white)
             .clipShape(.rect(cornerRadius: 20))
             .onTapGesture {
-                
+                pressNextButton()
             }
+        
+    }
+    
+// MARK: - Create pressNextButton
+    private func pressNextButton() {
+        withAnimation(.easeInOut) {
+            updateOnboardingState += 1
+        }
     }
     
     // MARK: - Create WelcomeView
