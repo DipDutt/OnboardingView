@@ -71,8 +71,8 @@ extension OnboradingView {
 // MARK: - Create pressNextButton
     private func pressNextButton() {
         
-        if updateOnboardingState == 3 {
-            
+        if updateOnboardingState >= 3 {
+                signIn()
         }
         withAnimation(.easeInOut) {
             updateOnboardingState += 1
