@@ -13,6 +13,12 @@ struct OnboradingView: View {
     @State var name:String = ""
     @State var age:Double = 0
     @State var gender:String = "MALE"
+    let viewTransition:AnyTransition = .asymmetric(insertion:.move(edge: .trailing), removal: .move(edge: .leading))
+    @AppStorage("sign_in") var currentUsersingIn: Bool = false
+    @AppStorage("name") var currentUsername: String?
+    @AppStorage("AGE") var currentUserage: Int?
+    @AppStorage("Gender") var currentUsergender: String?
+    
     
     var body: some View {
         ZStack {
