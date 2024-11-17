@@ -17,7 +17,7 @@ struct ContentView: View {
                     Text("profileview")
                 }
                 else {
-                    Text("Onboardingview")
+                  OnboradingView()
                 }
                 
             }
