@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C21279D2CEA25B0001373FE /* OnboradingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C21279C2CEA25B0001373FE /* OnboradingView.swift */; };
 		1C3F121E2BFB96DC00B16A20 /* OnboardingViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F121D2BFB96DC00B16A20 /* OnboardingViewApp.swift */; };
 		1C3F12202BFB96DC00B16A20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F121F2BFB96DC00B16A20 /* ContentView.swift */; };
 		1C3F12222BFB96DE00B16A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C3F12212BFB96DE00B16A20 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C21279C2CEA25B0001373FE /* OnboradingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboradingView.swift; sourceTree = "<group>"; };
 		1C3F121A2BFB96DC00B16A20 /* OnboardingView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3F121D2BFB96DC00B16A20 /* OnboardingViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewApp.swift; sourceTree = "<group>"; };
 		1C3F121F2BFB96DC00B16A20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C21279B2CEA258F001373FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C3F121F2BFB96DC00B16A20 /* ContentView.swift */,
+				1C21279C2CEA25B0001373FE /* OnboradingView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		1C3F12112BFB96DC00B16A20 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				1C3F121D2BFB96DC00B16A20 /* OnboardingViewApp.swift */,
-				1C3F121F2BFB96DC00B16A20 /* ContentView.swift */,
+				1C21279B2CEA258F001373FE /* Views */,
 				1C3F12212BFB96DE00B16A20 /* Assets.xcassets */,
 				1C3F12232BFB96DE00B16A20 /* Preview Content */,
 			);
@@ -139,6 +150,7 @@
 			files = (
 				1C3F12202BFB96DC00B16A20 /* ContentView.swift in Sources */,
 				1C3F121E2BFB96DC00B16A20 /* OnboardingViewApp.swift in Sources */,
+				1C21279D2CEA25B0001373FE /* OnboradingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
