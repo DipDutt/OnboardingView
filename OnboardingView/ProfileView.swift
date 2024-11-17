@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    @AppStorage("sign_in") var currentUsersingIn: Bool = false
+    @AppStorage("name") var currentUsername: String?
+    @AppStorage("AGE") var currentUserage: Int?
+    @AppStorage("Gender") var currentUsergender: String?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(systemName: "person.circle.fill")
+                .resizable()
+                .frame(width: 100, height: 100)
+            
+        }
     }
 }
 

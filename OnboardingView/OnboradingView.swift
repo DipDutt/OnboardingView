@@ -27,14 +27,18 @@ struct OnboradingView: View {
                 switch  updateOnboardingState{
                 case 0 :
                     welcomeView
+                        .transition(viewTransition)
                 case 1:
                     nameView
+                        .transition(viewTransition)
                 case 2:
                     ageView
+                        .transition(viewTransition)
                 case 3:
                     genderView
+                        .transition(viewTransition)
                 default:
-                    RoundedRectangle(cornerRadius: 25.0)
+                    Text("")
                     
                 }
                 
@@ -55,7 +59,7 @@ extension OnboradingView {
     
     // MARK: - Create butttonView
     private var butttonView: some View {
-        Text("press")
+        Text(updateOnboardingState == 0 ? "Sign Up": updateOnboardingState == 3 ? "Finish": "Next")
             .font(.title)
             .foregroundStyle(Color.cyan)
             .frame(height: 55)
