@@ -68,7 +68,7 @@ extension OnboradingView {
         
     }
     
-// MARK: - Create pressNextButton
+    // MARK: - Create pressNextButton
     private func pressNextButton() {
         
         if updateOnboardingState >= 3 {
