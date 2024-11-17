@@ -79,6 +79,19 @@ extension OnboradingView {
         }
     }
     
+    
+    // MARK: - Create signIn Fuction
+    
+    private func signIn() {
+        currentUsername = name
+        currentUserage = Int(age)
+        currentUsergender = gender
+        withAnimation(.spring) {
+            currentUsersingIn = true
+        }
+        
+    }
+    
     // MARK: - Create WelcomeView
     
     private var welcomeView: some View {
